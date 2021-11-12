@@ -6,60 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".ui.dashboard.DashboardFragment">
 
+
     <TextView
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Bienvenido a al calculadora"
-        tools:layout_editor_absoluteX="120dp"
-        tools:layout_editor_absoluteY="49dp" />
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/number1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="Numero 1"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="155dp" />
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWelcome" />
+
+    <Button
+        android:id="@+id/buttonEqual"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:text="Igual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="237dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEqual" />
+
+    <EditText
+        android:id="@+id/operationMath"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Operación"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1" />
 
     <EditText
         android:id="@+id/number2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:ems="10"
+        android:hint="Numero 2"
         android:inputType="number"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="274dp" />
-
-    <EditText
-        android:id="@+id/operationMath"
-        android:layout_width="129dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Operación"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="215dp" />
-
-    <Button
-        android:id="@+id/buttonEqual"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Igual"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="341dp" />
-
-
-    <TextView
-        android:id="@+id/textResult"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resultado"
         android:textAlignment="center"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="434dp" />
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="baseline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operationMath" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

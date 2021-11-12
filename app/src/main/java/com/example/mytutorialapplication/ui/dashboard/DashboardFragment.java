@@ -45,18 +45,22 @@ public class DashboardFragment extends Fragment {
                     case "+":
                         resultFinal = number1 + number2;
                         textResult.setText(resultFinal.toString());
+                        break;
                     case "-":
                         resultFinal = number1 - number2;
                         textResult.setText(resultFinal.toString());
+                        break;
                     case "/":
                         resultFinal = number1 / number2;
                         textResult.setText(resultFinal.toString());
+                        break;
                     case "*":
                         resultFinal = number1 * number2;
                         textResult.setText(resultFinal.toString());
+                        break;
                     default:
                         textResult.setText("No puede ser resuelto");
-
+                        break;
                 }
             }
         });
